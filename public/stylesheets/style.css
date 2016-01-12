@@ -1,0 +1,94 @@
+@font-face {
+    font-family:"ARDestine";
+    src: url("../fonts/ARDESTINE.ttf");
+}
+
+img {
+	margin: 25px;
+}
+
+/* Entire document */
+html * {
+    font-family: 'Droid Sans', sans-serif;
+}
+
+/* GENERAL CSS */
+.row {
+	margin-top: 60px;
+}
+
+footer {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.photo-gallery img {
+	max-width: 100%;
+	height: 200px;
+	margin: 25px 0px;
+}
+
+iframe {
+	margin: 30px;
+}
+
+.jumbotron {
+	background-color: #e74c3c;
+}
+
+/* LANDING BOX */
+.landing {
+	width: 70%;
+	margin-top: 50px;
+}
+
+#brand {
+	font-family: "ARDestine";
+	font-size: 5em;
+	font-style: italic;
+}
+
+/* SECTIONS */
+.section-content {
+	margin-top: 10px;
+}
+
+/* CSS MINI-FUNCTIONS */
+/* add this class for a specific style addition! */
+
+.text-wrap-right {
+	float: right;
+	margin: 25px;
+}
+
+.text-wrap-left {
+	float: left;
+	margin: 25px;
+}
+
+.border {
+	border-radius: 10px;
+	border:2px solid black;
+}
+
+.centerfy {
+	text-align: center;
+}
+
+.centerfy img {
+	margin: 0 auto;
+}
+
+/* parallax */
+.photo-content img {
+	display: inline-block;
+	max-width: auto;
+	height: 300px;
+	margin: 10px;
+}
+
+.parallax-window {
+    min-height: 600px;
+    background: transparent;
+    /*width: 80%;*/
+}

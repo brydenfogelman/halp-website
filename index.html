@@ -1,0 +1,147 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>halp by rescue one</title>
+		<!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="public/stylesheets/style.css">
+        <!--
+        normalize.css removes cross-browser differences in defaults, e.g.,
+        differences in how form elements appear between Firefox and IE
+        See: http://necolas.github.com/normalize.css/
+        -->
+        <!-- <link rel="stylesheet" href="/stylesheets/normalize.css"> -->
+        
+	</head>
+	<body>
+		<div class="container landing">
+			<div class="jumbotron centerfy">
+				<h1 id="brand"> H.A.L.P.</h1>
+				<p>There is a fire at the SPCA. Second year engineering physics students at UBC are tasked with designing, building and competing fully autonomous robots to rescue the pets.</p>
+				<iframe width="600" height="355"
+				src="https://www.youtube.com/embed/AQwtbpTfTJ4" frameborder="0" allowfullscreen>
+				</iframe>
+			</div>
+		</div>
+		<div ></div>
+		<!-- MAIN CONTAINER -->
+		<div class="container">
+			<div class="row section-intro">
+
+				<div class="parallax-window col-sm-7" data-parallax="scroll" data-image-src="public/images/stl-render.png">
+					<!-- <img src="public/images/stl-render.png" width="100%"> -->
+				</div>
+				<div class="col-sm-5">
+					<h1>Overview</h1>
+					<p>Every year engineering physics students are challenged to make robots to compete in the ENPH 253 robotics competition. This years competition was to locate and retrieve stuffed animals from the competition surface. The robots used multiple sensing systems to navigate along the course. Once pets were located the robot would retrieve them and attempt to carry them back to safety before the wall of fire blocked its path.</p>
+					<p>Members of Rescue One (Alexander Goddijn, Bryden Fogelman, Stefan Sander-Green, and Arjun Venkatesh) designed a robot, H.A.L.P., for the competition. H.A.L.P., along with 15 other robots, was built in 5 weeks.</p>
+					<p>On competition day H.A.L.P. won both of its qualification rounds scoring eight out of nine possible points on both runs. Before finals got underway a software problem that was stopping H.A.L.P. from retrieving the final pet was fixed. H.A.L.P. won its quarterfinal match scoring all nine points. In the semi final H.A.L.P. and Botbot both scored eight, but Botbot advanced on time and went on going on to win the competition. In the third place match H.A.L.P. once again won by scoring nine points.</p>
+					<p>This course was a challenging and rewarding learning opportunity for all members of Rescue One. We gained experience in Electrical, Mechanical and Software design as well as prototyping skills including: using Solidworks, using a waterjet cutter, using a laser cutter, soldering  and using hand tools.</p>
+				</div>
+			</div>
+		<!-- for section icons -->
+			<div class="row section-icons">
+				<div class="col-sm-4 centerfy elec">
+					<img src="public/images/icons/electrical.png">
+					<h3 class="section-header">Electrical</h3>
+				</div>
+				<div class="col-sm-4 centerfy mech">
+					<img src="public/images/icons/mechanical.png">
+					<h3 class="section-header">Mechanical</h3>
+				</div>
+				<div class="col-sm-4 centerfy soft">
+					<img src="public/images/icons/software.png">
+					<h3 class="section-header">Software</h3>
+				</div>
+			</div>
+			<!-- for section content -->
+			<div class="row section-content">
+				<div class="col-sm-10 col-sm-offset-1 elec-content border" style="display: none">
+					<img class="text-wrap-right" src="public/images/circuits.jpg" width="50%">
+					<h4>Overview</h4>
+					<p>H.A.L.P. is powered by a 16v Lithium-Polymer Battery. Signal processing and I/O is done using the TINAH microcontroller (similar to Arduino). In addition electrical circuits are used to for sensory input and for motor output.</p>
+					
+					<h4>Motor driving circuits</h4>
+					<p>Pulse Width Modulation control is supplied to the motors by H-Bridge circuits. </p>
+					<h4>IR sensing</h4>
+					
+					<p>A 10kHz infrared beacon indicated the position of the final pet. QSD124 phototransistors were used to detect the signal. An analog signal processing circuit determined the strength of the IR signal and thus position relative to the beacon.</p>
+					<!-- <img class="text-wrap-left" src="public/images/IRCircuit.png" width="25%"> -->
+					<!-- TODO: update the schematic to be the correct version -->
+				</div>
+				<div class="col-sm-10 col-sm-offset-1 mech-content border" style="display: none">
+					<h4>Drivetrain</h4> 
+					<p>H.A.L.P. is driven and steered differentially by two geared Barber-Colman motors. The drive gear (attached to the motor shaft) is made out of Delrin: a durable low friction plastic, while the wheel gear is made out of acrylic. The wheels used are rubber rollerblade wheels and provide fantastic grip on the painted plywood surface. A 4:1 gear ratio allows the robot to move swiftly while ensuring enough torque is fed to the wheels to climb up the playing surface ramp. </p>
+					<div class="photo-gallery centerfy">
+						<img src="public/images/driveTrain1.png">
+						<img src="public/images/driveTrain2.png">
+						<img src="public/images/driveTrain3.jpg">
+					</div>
+					
+					<!-- IMPLEMENT LATER -->
+					<!-- <div class="photo-gallery">
+						<img src=""
+						<figcaption>Click the photo to cycle through images!</figcaption>
+					</div> -->
+					<!-- Solidworks sub-assembly showing wheel, gears, bracket and motor. (driveTrain1.png) -->
+
+					<!-- Drivetrain shown as part of robot assembly. (driveTrain2.png) -->
+					<!-- Actual drivetrain on finished robot. (driveTrain3.png) -->
+					<h4>Chassis</h4>
+					<p> 1/4 inch lasercut plywood was used for the chassis because it is lightweight, durable and allows the use of wood screws for easy fastening and unfastening of components. All brackets were either 3D printed using ABS plastic or waterjet and bent out of lightweight aluminum sheet metal. </p>
+
+					<!-- ¼” plywood chassis base with aluminum basket sides, circuit under-bay and TINAH bracket. (chassisOverview.png) -->
+					<h4>Main Arm</h4>
+					<p>The main pet pickup arm uses a spool system to raise and lower the arm with a geared motor to control the base movement of the arm. Arm positions are measured using potentiometers located at the pivot and base of the arm.</p>
+					<img class="text-wrap-left" src="public/images/armBase2.jpg" width="40%">
+					<!-- (armOverview.png) -->
+
+					<!-- Closeup of the arm’s base and spool. (armBase2.png) -->
+
+					<p>Pickup/Release Plate uses a steel top plate (magnetic) to pick up the pets and an aluminum (non-magnetic) bottom plate to release the pets. A microswitch located on the top plate detects if the plates are pressed together and indicates that a pet has been picked up. The servo turns the cam to separate the two plates and release the pet. </p>
+					<img class="text-wrap-right" src="public/images/armPlate2.jpg" width="30%">
+
+					<!-- Soliworks model of pickup/release plate. (armPlate1.png) -->
+					<!-- Final pickup/release plate. (armPlate2.png) -->
+
+					<h4>Front Structure</h4>
+					<p>Front structure houses the infrared sensors (3D printed and shown in yellow), the plate used to pick up the 4th pet and the "fishing rod" used to save the final buried pet.</p>
+					<!-- (frontStruct1.png) -->
+
+					<!-- (frontStuct2.png) -->
+				</div>
+				<div class="col-sm-10 col-sm-offset-1 soft-content border" style="display: none">
+					<h4>Example</h4>
+					<p>Check out our <a href="https://github.com/RescueOne/Implementation/blob/master/v5test/v5test.ino">code repo</a> to look at our long but wonderful code!</p>
+					<script src="http://gist-it.appspot.com/http://github.com/RescueOne/Implementation/blob/master/v5test/v5test.ino?slice=567:586"></script> 
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="photo-section">
+				<div class="photo-content centerfy">
+					<h1>Competition Day</h1>
+					<img src="public/images/comp1.jpg">
+					<img src="public/images/comp2.jpg">
+					<img src="public/images/comp3.jpg">
+					<img src="public/images/comp4.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<footer class="centerfy">
+				<div>Web Design by Bryden Fogelman</div>
+				<div>Icons made by <a href="http://www.flaticon.com/authors/bogdan-rosu" title="Bogdan Rosu">Bogdan Rosu</a> and <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+			</footer>
+		</div>
+
+		<!-- Javascript! at end so page loads faster -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="public/javascript/parallax.min.js"></script>
+        <script type="text/javascript" src="public/javascript/app.js"></script>
+	</body>
+</html>
